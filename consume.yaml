@@ -7,10 +7,7 @@ resources:
   - pipeline: trigger
     project: tuttu
     source: root-pipelines/trigger
-    trigger:    
-      stages:
-      - PreProduction
-      - Production
+    trigger: true
 
 stages:
   - stage: consume
