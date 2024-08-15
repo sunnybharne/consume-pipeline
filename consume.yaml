@@ -1,0 +1,11 @@
+name: consume_pipeline
+
+pool: selfHosted
+
+stages:
+  - stage: consume
+    jobs:
+      - job: consumejob
+        steps:
+          - script: echo "Hello, world!"
+
