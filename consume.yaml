@@ -2,6 +2,16 @@ name: consume_pipeline
 
 pool: selfHosted
 
+resources:
+  pipelines:
+  - pipeline: trigger
+    project: tuttu
+    source: root-pipelines/trigger
+    trigger:    
+      stages:
+      - PreProduction
+      - Production
+
 stages:
   - stage: consume
     jobs:
