@@ -8,6 +8,9 @@ resources:
     project: tuttu
     source: root-pipelines/trigger
     trigger:    
+      branches:
+        include: 
+        - main
       stages:
       - Production
 
